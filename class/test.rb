@@ -23,11 +23,12 @@ silvester = Person.new(42, 'Silvester')
 harry_potter = Book.new('Harry Potter', 'JK Rowling')
 moby_dick = Book.new('Moby Dick', 'Herman Mervile')
 
-Rental.new(Date.today, harry_potter, anna)
-Rental.new(Date.today, harry_potter, john)
-Rental.new(Date.today, moby_dick, silvester)
-Rental.new(Date.today, moby_dick, john)
-Rental.new(Date.today, moby_dick, anna)
+harry_potter.add_rental(Date.today, anna)
+harry_potter.add_rental(Date.today, john)
+harry_potter.add_rental(Date.today, silvester)
+
+anna.add_rental(Date.today, moby_dick)
+john.add_rental(Date.today, moby_dick)
 
 puts "\n"
 
