@@ -8,7 +8,6 @@ michael = Student.new(32, 'Michael')
 melissa = Student.new(23, 'Melissa')
 austin = Student.new(23, 'Austin')
 
-
 ruby_classroom = Classroom.new('Ruby Module')
 ruby_classroom.add_student(melissa)
 michael.classroom = ruby_classroom
